@@ -6,6 +6,13 @@ except ImportError:
     exit(1)
 
 try:
+    import math
+except ImportError:
+    print("Error: The 'math' module is not installed.")
+    print("Please install it by running: pip install shutil")
+    exit(1)
+
+try:
     from colorama import Fore, Style, init
 except ImportError:
     print("Error: The 'colorama' module is not installed.")
@@ -47,10 +54,21 @@ def write(text, rgb = (255,255,255), duration=0):
 
     else:
         for i in range(len(text)):
+            console_width, _ = shutil.get_terminal_size()
             if i == 0:
                 write(text[:i + 1], rgb=rgb, duration=0)
                 time.sleep(duration / len(text))
             else:
+                index_del = math.floor(len(text[:i - 1]) / console_width)
+                index_del_bool = True
+                while index_del_bool == True:
+                    if index_del == 0:
+                        index_del_bool = False
+                        continue
+                    else:
+                        index_del = index_del - 1
+                        print("\033[F\033[K", end="")
+
                 print("\033[F\033[K", end="")
                 write(text[:i + 1], rgb=rgb, duration=0)
                 time.sleep(duration / len(text))

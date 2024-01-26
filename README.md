@@ -8,7 +8,7 @@ It includes many features, for example:
 * Dynamic Banner Preparation
 and much more.
 
-To see all features, go to features.md
+To see all features, go to Features.md
 
 
 # CLI-Full von Zypherix-Studios
@@ -20,4 +20,4 @@ Es enthält viele Funktionen, wie zum Beispiel:
 * Kreative Arten, den benutzten Text zu präsentieren
 * Dynamische Banner-Vorbereitung
 und vieles mehr.
-Um alle Funktionen zu sehen, gehe zu features.md.
+Um alle Funktionen zu sehen, gehe zu Features.md.

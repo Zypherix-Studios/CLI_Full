@@ -97,6 +97,16 @@ def get_input(prompt=">", rgb=(255,255,255)):
     write(prompt, rgb=rgb)
 
     while True:
+        console_width, _ = shutil.get_terminal_size()
+        index_del = math.floor(len(buffer) / console_width) + 1
+        index_del_bool = True
+        while index_del_bool == True:
+            if index_del == 0:
+                index_del_bool = False
+                continue
+            else:
+                index_del = index_del - 1
+                print("\033[F\033[K", end="")
         try:
             char = msvcrt.getch().decode('utf-8')
         except:

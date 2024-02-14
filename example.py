@@ -29,6 +29,11 @@ time.sleep(3)
 
 CLI.write("This is a Colorfull Text!", rgb=(250,120,0),duration=2)
 
+# It also handles long Text!
+# Es kann auch langes Text verarbeiten!
+
+CLI.write("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.", duration=10)
+
 # And the user Input is even more Important (Not really but eh)
 # Natürlich darf der User Input nicht fehlen!
 
